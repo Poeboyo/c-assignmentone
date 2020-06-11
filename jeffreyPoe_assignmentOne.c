@@ -25,14 +25,18 @@ int main(){
     printf("%i \n",toes*2);
     //Printing the value of toes after being squared
     printf("%f \n",pow(toes, 2));
-    //Declares Num as Int for the user input
+    //Declares faren as Int for the user input
     int faren;
-    double celc = (faren - 32)*5/9;
+
+    //Asks for a number input from the user
     printf("Enter a Fahrenheit Temperature to be calculated to Celcius! \n");
-    scanf("%d", &faren);
-    getchar();
-    printf("You typed, %d Fahrenheit", faren);
-    printf("Your Temperature in Celcius is %f.\n", celc);
+    //Applies the value of input to faren
+    scanf("%i", &faren);
+    //Celc takes on a value and converts faren
+    double celc = ((double)(faren - 32)*5)/9 ;
+    //Print statement displays number types and the new temperature to 2 decimal places
+    printf("You typed %i Fahrenheit,", faren);
+    printf(" Your Temperature in Celcius is %.2f.\n", celc);
 };
 
 
